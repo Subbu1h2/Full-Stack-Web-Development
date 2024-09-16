@@ -14,14 +14,34 @@
             border-right:10px solid red;
             border-bottom: 12px solid blue; */
 
-            margin: 20px 50px 30px 100px;
+            /* margin: 20px 50px 30px 100px; */
 
 
+        }
+        #content-box{
+          background-color: red;
+          width: 100px;
+          height: 100px;
+          padding: 40px;
+          border: 2px solid;
+
+        }
+        #border-box{
+          background-color: rgb(83, 21, 228);
+          width: 100px;
+          height: 100px;
+          padding: 40px;
+          border: 2px solid;
+          box-sizing: border-box;
         }
     </style>
   </head>
   <body>
     <button>Box Model</button>
+    <br><br>
+    <div id="content-box">Hello</div>
+    <br>
+    <div id="border-box">World</div>
 
   </body>
 </html>
