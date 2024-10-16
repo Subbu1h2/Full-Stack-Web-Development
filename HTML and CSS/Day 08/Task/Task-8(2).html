@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            height: 97vh;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 10% 80% 10%;
+        }
+        .header{
+            background-color: gray;
+            color: white;
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+        .side{
+            background-color: gray;
+            color: white;
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        #content{
+            display: flex;
+            
+        }
+        .widget{
+            background-color: green;
+            justify-content: space-around;
+        }
+        .footer{
+            background-color: gray;
+            color: white;
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="side">Sidebar</div>
+        <div id="content">
+            <div class="widget">widget1</div>
+            <div class="widget">widget2</div>
+            <div class="widget">widget3</div>
+            <div class="widget">widget4</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

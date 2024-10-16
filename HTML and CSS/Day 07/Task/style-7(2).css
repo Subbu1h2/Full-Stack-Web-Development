@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: rgb(75, 72, 72);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  #left-div {
+    width: 30%;
+    background-color: greenyellow;
+    float: left;
+    height: 50px;
+    margin-left: 5%;
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  #right-div {
+    width: 50%;
+    background-color: greenyellow;
+    float: right;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5%;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  footer {
+    background-color: rgb(75, 72, 72);
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  @media screen and (max-width: 767px) {
+      #left-div,#right-div {
+           width: 90%;
+           float: none;
+           margin: 10px auto;
+           display:block;
+      }
+      header,footer {
+          padding: 10px;
+      }
+      #left-div,#right-div {
+          height: auto;
+          padding: 10px;
+      }
+  }
+  @media screen and (min-width:767px) and (max-width:1024px){
+      #left-div{
+          width:40%;
+          margin-left: 2.5%;
+      }
+      #right-div{
+          width: 50%;
+          margin-right: 2.5%;
+      }
+  }
