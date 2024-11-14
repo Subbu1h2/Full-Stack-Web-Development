@@ -2,6 +2,7 @@ import "./App.css";
 import  ClassBased  from './Component/ClassBased'
 import  FunctionBased  from "./Component/FunctionBased";
 import StateManagement from "./Component/Hooks/StateManagement";
+import NewComponent from "./Component/NewComponent";
 function App() {
   // (conditional rendering)
   // let showComponent = false;
@@ -15,6 +16,7 @@ function App() {
       <ClassBased/>
       <FunctionBased/>
       <StateManagement/>
+      <NewComponent/>
     </div>
   );
 }
